@@ -17,7 +17,7 @@ pub fn build(b: *std.Build) void {
 
     _ = b.addModule("uuid", .{
         //
-        .source_file = .{ .path = "uuid.zig" },
+        .root_source_file = .{ .path = "uuid.zig" },
     });
 
     const lib = b.addStaticLibrary(.{
